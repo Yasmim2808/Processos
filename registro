@@ -1,0 +1,24 @@
+Registro- processos: código da imagem é um workflow do GitHub Actions escrito em YAML. Ele cria um processo simples de build que é executado automaticamente sempre que ocorre um push no repositório.
+
+# Nome do workflow.
+# Esse nome será exibido na aba "Actions" do GitHub.
+name: Build simples
+
+# Define o evento que dispara o workflow.
+# Neste caso, o workflow será executado sempre que houver
+# um push de código para o repositório.
+on: [push]
+
+# Define os trabalhos (jobs) que serão executados.
+jobs:
+
+  # Identificador do job.
+  # Aqui o job foi chamado de "build".
+  build:
+
+    # Define o ambiente/máquina onde o job será executado.
+    # "ubuntu-latest" indica que será utilizada uma máquina
+    # Linux fornecida pelo GitHub.
+    runs-on: ubuntu-latest
+
+    # D…
