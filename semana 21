@@ -1,0 +1,47 @@
+MÉTRICAS DORA
+
+São utilizadas para avaliar o desenvolvimento e a entrega de software. Elas ajudam a responder: Com que rapidez entregamos? Com que frequência? E com que qualidade?
+
+1. Deployment Frequency
+Mede a frequência de entregas.
+Cálculo: Nº de deploys ÷ período.
+
+2. Lead Time for Changes
+Mede o tempo entre a alteração e a implantação.
+Cálculo: Data do deploy − data/hora do commit.
+
+3. Change Failure Rate
+Mede o percentual de mudanças que causam problemas.
+Cálculo: Falhas ÷ total de mudanças × 100.
+
+4. Time to Restore
+Mede o tempo para recuperar o serviço após uma falha.
+Cálculo: Tempo de recuperação − início da falha.
+
+ 1.FORMULA: DF = n° deploys / periodo 
+EX: uma equipe realizou 2o deploys em 5 dias 
+CALCULO: 20/5 = 4 deploys por dia isso significa que a equipe realiza, em media 4 implantação por dia 
+
+ 2. lead time for chenges ( tempo de entrega mede quanto tempo uma alteração leva desde o momento em que é criada 
+|commitada ate estar disponivel em produção. 
+ EX: COMMIT: SEGUNDA-FEIRA, 10H
+     DEPLOY: TERÇA-FEIRA, 10H 
+
+ 3.Change failure Rate- Taxa de falhas das Mudanças.
+Indica qual % das alterações implantadas causou problemas como: 3 bugs, feedbacks/ Total de mudanças) *100.
+ex: Uma equipe realizou 50 deploys e 5 apresentarem falhas.
+
+Cálculo: 5/50*100=10%
+Isso significa que 10% das mudanças implantadas resultaram em algum tipo de falhas.
+
+(4) Time to Restore- Tempo para restaurar.
+ Também  conhecido como MTTR ( Mean Time to Restore) em muitos contextos.
+ Mede quanto a equipe leva poara recuperar o serviço depois que ocorre uma falha.
+
+Fórmula: Tempo de restauração= Hora de recuperação(1h30m)/ Hora do início da falha.
+Falha começou: 14h00 / Serviço restaurado: 15h30. 	 
+
+
+
+
+
